@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomasz Gajda - Frontend Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Add your CSS file here -->
+    <link rel="stylesheet" href="edu.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Tomasz</h2>
+            </div>
+            <nav>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li class="dropdown">
+                        <a href="#education">Education <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#training">Training</a></li>
+                            <li><a href="#achievements">Achievements</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#experiences">Experiences <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#workshop">Workshop</a></li>
+                            <li><a href="#seminar">Seminar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="yellow-dot"></div>
+        
+        <div class="container">
+            <div class="text-container">
+                <h2 class="greeting">Hi, I am</h2>
+                <h1 class="name">Tomasz Gajda</h1>
+                <p class="title">Frontend Developer & UI Designer</p>
+                <p class="description">Creating beautiful, functional, and user-friendly web experiences with modern technologies and creative design solutions.</p>
+                
+                <div class="social-icons">
+                    <a href="mailto:tomasz.gajda@example.com" class="social-icon email" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com" class="social-icon github" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" class="social-icon linkedin" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://twitter.com" class="social-icon twitter" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="image-container">
+                <div class="profile-image">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face" alt="Tomasz Gajda">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate Frontend Developer and UI Designer with over 3 years of experience creating beautiful, functional, and user-friendly web experiences. I combine technical expertise with creative design to build modern websites and applications that make a real impact.</p>
+                    
+                    <p>My journey in web development started with a curiosity about how websites work, and it has evolved into a deep passion for creating digital experiences that not only look great but also provide exceptional user experiences. I specialize in modern JavaScript frameworks, responsive design, and user interface optimization.</p>
+                    
+                    <p>When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, or sharing knowledge with the developer community through workshops and seminars.</p>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>25+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>3+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-width="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js-square"></i>
+                        <span>JavaScript</span>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js</span>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-width="75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-figma"></i>
+                        <span>UI/UX Design</span>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-width="88%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education-section" id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-content">
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3>Bachelor of Computer Science</h3>
+                        <div class="institution">University of Technology Warsaw</div>
+                        <div class="year">2019 - 2023</div>
+                        <p>Specialized in Software Engineering with focus on web technologies and user interface design. Graduated with honors and received recognition for outstanding academic performance.</p>
+                        <div class="education-highlights">
+                            <span class="highlight">Summa Cum Laude</span>
+                            <span class="highlight">Dean's List</span>
+                            <span class="highlight">Web Development Focus</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3>Full Stack Web Development Certificate</h3>
+                        <div class="institution">Codecademy Pro</div>
+                        <div class="year">2022</div>
+                        <p>Comprehensive program covering modern web development technologies including React, Node.js, Express, and database management.</p>
+                        <div class="education-highlights">
+                            <span class="highlight">40+ Projects</span>
+                            <span class="highlight">Industry Mentorship</span>
+                            <span class="highlight">Career Services</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3>Google UX Design Professional Certificate</h3>
+                        <div class="institution">Google via Coursera</div>
+                        <div class="year">2023</div>
+                        <p>Comprehensive UX design program covering user research, wireframing, prototyping, and user testing methodologies.</p>
+                        <div class="education-highlights">
+                            <span class="highlight">UX Research</span>
+                            <span class="highlight">Prototyping</span>
+                            <span class="highlight">User Testing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Section -->
+    <section class="training-section" id="training">
+        <div class="container">
+            <h2 class="section-title">Training & Workshops</h2>
+            <div class="training-grid">
+                <div class="training-card">
+                    <i class="fab fa-react"></i>
+                    <h3>Advanced React Development</h3>
+                    <p>Intensive training program focusing on advanced React patterns, state management with Redux, and performance optimization techniques.</p>
+                    <div class="training-meta">
+                        <span class="duration">40 hours</span>
+                        <span class="date">March 2024</span>
+                    </div>
+                </div>
+                
+                <div class="training-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Web Design Mastery</h3>
+                    <p>Comprehensive course on creating mobile-first, responsive websites using modern CSS Grid, Flexbox, and media queries.</p>
+                    <div class="training-meta">
+                        <span class="duration">30 hours</span>
+                        <span class="date">January 2024</span>
+                    </div>
+                </div>
+                
+                <div class="training-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Performance Optimization Workshop</h3>
+                    <p>Hands-on workshop covering web performance best practices, Core Web Vitals, and optimization strategies for faster loading times.</p>
+                    <div class="training-meta">
+                        <span class="duration">16 hours</span>
+                        <span class="date">November 2023</span>
+                    </div>
+                </div>
+                
+                <div class="training-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Design Fundamentals</h3>
+                    <p>Design thinking workshop covering user research, wireframing, prototyping, and creating intuitive user interfaces.</p>
+                    <div class="training-meta">
+                        <span class="duration">24 hours</span>
+                        <span class="date">September 2023</span>
+                    </div>
+                </div>
+                
+                <div class="training-card">
+                    <i class="fab fa-js-square"></i>
+                    <h3>Modern JavaScript ES6+</h3>
+                    <p>Deep dive into modern JavaScript features including arrow functions, destructuring, modules, and asynchronous programming.</p>
+                    <div class="training-meta">
+                        <span class="duration">35 hours</span>
+                        <span class="date">July 2023</span>
+                    </div>
+                </div>
+                
+                <div class="training-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Web Security Best Practices</h3>
+                    <p>Security-focused training covering common vulnerabilities, secure coding practices, and implementing authentication systems.</p>
+                    <div class="training-meta">
+                        <span class="duration">20 hours</span>
+                        <span class="date">May 2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements-section" id="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements & Recognition</h2>
+            <div class="achievements-grid">
+                <div class="achievement-item">
+                    <div class="achievement-year">2024</div>
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Best UI Design Award</h3>
+                    <p>Received recognition for outstanding user interface design at the Warsaw Tech Conference for innovative e-commerce platform design.</p>
+                </div>
+                
+                <div class="achievement-item">
+                    <div class="achievement-year">2023</div>
+                    <div class="achievement-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Top Performer Recognition</h3>
+                    <p>Acknowledged as top performer at TechCorp for delivering high-quality projects ahead of schedule and mentoring junior developers.</p>
+                </div>
+                
+                <div class="achievement-item">
+                    <div class="achievement-year">2023</div>
+                    <div class="achievement-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Open Source Contributor</h3>
+                    <p>Active contributor to several popular open-source projects with over 100+ merged pull requests and 500+ GitHub stars earned.</p>
+                </div>
+                
+                <div class="achievement-item">
+                    <div class="achievement-year">2022</div>
+                    <div class="achievement-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community Leadership</h3>
+                    <p>Founded and led local frontend developer meetup group, organizing monthly events with 200+ active members.</p>
+                </div>
+                
+                <div class="achievement-item">
+                    <div class="achievement-year">2022</div>
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Hackathon Winner</h3>
+                    <p>First place winner at the 48-hour Warsaw Innovation Hackathon for developing an accessible web application for visually impaired users.</p>
+                </div>
+                
+                <div class="achievement-item">
+                    <div class="achievement-year">2021</div>
+                    <div class="achievement-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation Award</h3>
+                    <p>Received company innovation award for developing an automated testing framework that reduced bug reports by 40%.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experiences-section" id="experiences">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Senior Frontend Developer</h3>
+                        <div class="company">TechCorp Solutions</div>
+                        <div class="period">January 2023 - Present</div>
+                        <p>Leading frontend development initiatives for enterprise-level applications, mentoring junior developers, and implementing modern development practices.</p>
+                        <ul class="responsibilities">
+                            <li>Led development of responsive web applications using React and TypeScript</li>
+                            <li>Improved application performance by 35% through code optimization</li>
+                            <li>Mentored 3 junior developers and conducted code reviews</li>
+                            <li>Collaborated with UX team to implement pixel-perfect designs</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Frontend Developer</h3>
+                        <div class="company">WebStudio Pro</div>
+                        <div class="period">June 2021 - December 2022</div>
+                        <p>Developed and maintained multiple client websites and web applications with focus on user experience and performance optimization.</p>
+                        <ul class="responsibilities">
+                            <li>Built 15+ responsive websites using modern HTML, CSS, and JavaScript</li>
+                            <li>Integrated third-party APIs and payment gateways</li>
+                            <li>Optimized websites for SEO and accessibility standards</li>
+                            <li>Collaborated with design team to ensure brand consistency</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Junior Web Developer</h3>
+                        <div class="company">StartUp Incubator</div>
+                        <div class="period">September 2020 - May 2021</div>
+                        <p>Entry-level position focused on learning modern web development technologies and contributing to various startup projects.</p>
+                        <ul class="responsibilities">
+                            <li>Assisted in development of MVP applications for startup clients</li>
+                            <li>Fixed bugs and implemented small features under senior guidance</li>
+                            <li>Participated in agile development process and daily standups</li>
+                            <li>Gained experience with version control and deployment processes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshop Section -->
+    <section class="workshop-section" id="workshop">
+        <div class="container">
+            <h2 class="section-title">Workshops Conducted</h2>
+            <div class="workshop-grid">
+                <div class="workshop-card">
+                    <i class="fab fa-react"></i>
+                    <h3>Introduction to React</h3>
+                    <p>Comprehensive workshop covering React fundamentals, component lifecycle, state management, and hooks for beginner developers.</p>
+                    <div class="workshop-details">
+                        <span class="attendees">45 Attendees</span>
+                        <span class="rating">4.8/5 Rating</span>
+                    </div>
+                </div>
+                
+                <div class="workshop-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design Masterclass</h3>
+                    <p>Hands-on workshop teaching modern CSS techniques, Grid, Flexbox, and media queries for creating mobile-first responsive websites.</p>
+                    <div class="workshop-details">
+                        <span class="attendees">38 Attendees</span>
+                        <span class="rating">4.9/5 Rating</span>
+                    </div>
+                </div>
+                
+                <div class="workshop-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Web Performance Optimization</h3>
+                    <p>Technical workshop focusing on Core Web Vitals, image optimization, code splitting, and caching strategies for faster websites.</p>
+                    <div class="workshop-details">
+                        <span class="attendees">32 Attendees</span>
+                        <span class="rating">4.7/5 Rating</span>
+                    </div>
+                </div>
+                
+                <div class="workshop-card">
+                    <i class="fab fa-js-square"></i>
+                    <h3>Modern JavaScript ES6+</h3>
+                    <p>Deep dive into modern JavaScript features including arrow functions, destructuring, modules, promises, and async/await patterns.</p>
+                    <div class="workshop-details">
+                        <span class="attendees">52 Attendees</span>
+                        <span class="rating">4.8/5 Rating</span>
+                    </div>
+                </div>
+                
+                <div class="workshop-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX for Developers</h3>
+                    <p>Design-focused workshop helping developers understand user experience principles, design systems, and creating intuitive interfaces.</p>
+                    <div class="workshop-details">
+                        <span class="attendees">28 Attendees</span>
+                        <span class="rating">4.6/5 Rating</span>
+                    </div>
+                </div>
+                
+                <div class="workshop-card">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git & GitHub Workflow</h3>
+                    <p>Practical workshop covering version control best practices, branching strategies, pull requests, and collaborative development workflows.</p>
+                    <div class="workshop-details">
+                        <span class="attendees">41 Attendees</span>
+                        <span class="rating">4.9/5 Rating</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seminar Section -->
+    <section class="seminar-section" id="seminar">
+        <div class="container">
+            <h2 class="section-title">Seminars & Speaking Engagements</h2>
+            <div class="seminar-timeline">
+                <div class="seminar-item">
+                    <div class="seminar-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <div class="seminar-info">
+                        <h3>The Future of Frontend Development</h3>
+                        <div class="venue">Warsaw Tech Conference 2024</div>
+                        <div class="period">March 15, 2024</div>
+                        <p>Keynote presentation discussing emerging trends in frontend development, including WebAssembly, micro-frontends, and the evolution of JavaScript frameworks.</p>
+                        <div class="seminar-highlights">
+                            <span class="highlight">500+ Attendees</span>
+                            <span class="highlight">Keynote Speaker</span>
+                            <span class="highlight">Live Streamed</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="seminar-item">
+                    <div class="seminar-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="seminar-info">
+                        <h3>Building Accessible Web Applications</h3>
+                        <div class="venue">Frontend Meetup Warsaw</div>
+                        <div class="period">January 20, 2024</div>
+                        <p>Technical presentation on implementing accessibility best practices, WCAG guidelines, and creating inclusive web experiences for all users.</p>
+                        <div class="seminar-highlights">
+                            <span class="highlight">80+ Attendees</span>
+                            <span class="highlight">Interactive Demo</span>
+                            <span class="highlight">Q&A Session</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="seminar-item">
+                    <div class="seminar-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="seminar-info">
+                        <h3>Performance Metrics That Matter</h3>
+                        <div class="venue">DevOps Summit Poland</div>
+                        <div class="period">November 8, 2023</div>
+                        <p>Data-driven presentation analyzing Core Web Vitals, real user monitoring, and how performance impacts business metrics and user engagement.</p>
+                        <div class="seminar-highlights">
+                            <span class="highlight">300+ Attendees</span>
+                            <span class="highlight">Case Studies</span>
+                            <span class="highlight">Performance Metrics</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="seminar-item">
+                    <div class="seminar-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="seminar-info">
+                        <h3>Modern CSS: Grid, Flexbox & Beyond</h3>
+                        <div class="venue">CSS Day Warsaw</div>
+                        <div class="period">September 12, 2023</div>
+                        <p>Comprehensive presentation covering advanced CSS techniques, modern layout methods, and creative solutions for complex design challenges.</p>
+                        <div class="seminar-highlights">
+                            <span class="highlight">200+ Attendees</span>
+                            <span class="highlight">Live Coding</span>
+                            <span class="highlight">Code Examples</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="seminar-item">
+                    <div class="seminar-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="seminar-info">
+                        <h3>Mobile-First Design Strategies</h3>
+                        <div class="venue">UX/UI Conference Krakow</div>
+                        <div class="period">June 25, 2023</div>
+                        <p>Design-focused presentation on mobile-first approach, progressive enhancement, and creating seamless experiences across all device types.</p>
+                        <div class="seminar-highlights">
+                            <span class="highlight">150+ Attendees</span>
+                            <span class="highlight">Design Workshop</span>
+                            <span class="highlight">Mobile Demos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hello, feel free to reach out!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:john.doe@example.com">sami927003@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <strong>Phone</strong>
+                                <a href="tel:+15551234567">+44 7984 699306</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <strong>Location</strong>
+                                <span>City Road, Cardiff, CF24 3JF </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>Abdullah <span> Sami</span></h3>
+                    <p>Aircraft Engineer</p>
+                    <p>"Design is the art of turning constraints into opportunities" - Aza Raskin </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#experiences">Experience</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Me</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Abdullah Sami. All rights reserved.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+                
+                
+<script src="edu.js"></script>
+</body>
+</html>
