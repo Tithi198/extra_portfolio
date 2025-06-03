@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomasz Gajda - Frontend Developer Portfolio</title>
+    <title>Sami - Aircraft Engineer Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Add your CSS file here -->
     <link rel="stylesheet" href="edu.css">
@@ -13,7 +13,7 @@
     <header>
         <div class="nav-container">
             <div class="logo">
-                <h2>Tomasz</h2>
+                <h2>Sami</h2>
             </div>
             <nav>
                 <div class="menu-toggle" id="menu-toggle">
@@ -27,15 +27,18 @@
                     <li class="dropdown">
                         <a href="#education">Education <i class="fas fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#training">Training</a></li>
-                            <li><a href="#achievements">Achievements</a></li>
+                            <li><a href="#training"><i class="fas fa-certificate"></i>Training</a></li>
+                            <li><a href="#core"><i class="fa-solid fa-book-open"></i>Core Modules</a></li>
+                            <li><a href="#projects"><i class="fa-solid fa-diagram-project"></i>Projects</a></li>
+                            
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#experiences">Experiences <i class="fas fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#workshop">Workshop</a></li>
-                            <li><a href="#seminar">Seminar</a></li>
+                            <li><a href="#workshops"><i class="fas fa-chalkboard-teacher"></i>Workshops</a></li>
+                            <li><a href="#achievements"><i class="fas fa-trophy"></i>Achievements</a></li>
+                            <li><a href="#seminars"><i class="fas fa-users"></i>Seminars</a></li>
                         </ul>
                     </li>
                     <li><a href="#contact">Contact</a></li>
@@ -45,114 +48,111 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section" id="home">
-        <div class="yellow-dot"></div>
-        
-        <div class="container">
-            <div class="text-container">
-                <h2 class="greeting">Hi, I am</h2>
-                <h1 class="name">Tomasz Gajda</h1>
-                <p class="title">Frontend Developer & UI Designer</p>
-                <p class="description">Creating beautiful, functional, and user-friendly web experiences with modern technologies and creative design solutions.</p>
-                
-                <div class="social-icons">
-                    <a href="mailto:tomasz.gajda@example.com" class="social-icon email" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="https://github.com" class="social-icon github" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://linkedin.com" class="social-icon linkedin" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://twitter.com" class="social-icon twitter" target="_blank" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
+
+ <!-- Hero Section -->
+
+ <section class="hero-section" id="home">
+        <div class="hero-background"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="text-container">
+                   <!-- <h2 class="greeting">Hi, I am</h2>-->
+                    <h1 class="name">Abdullah Sami</h1>
+                    <p class="title">Aircraft Engineer & Aviation Specialist</p>
+                    <p class="description">Recent Aircraft Engineering graduate with hands-on experience in maintenance, systems analysis, and aviation safety. Committed to ensuring operational reliability and regulatory compliance.</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">Get In Touch</a>
+                        <a href="#about" class="btn-secondary">Download CV</a>
+                    </div>
+                    
+                    <div class="social-icons">
+                        <a href="mailto:sami927003@gmail.com" class="social-icon email" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sami-sami-00b10a319/" class="social-icon linkedin" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-icon github" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
                 </div>
                 
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                <div class="image-container">
+                    <div class="profile-wrapper">
+                        <div class="floating-elements">
+                            <div class="floating-icon aircraft">
+                                <i class="fas fa-plane"></i>
+                            </div>
+                            <div class="floating-icon tools">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <div class="floating-icon cog">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                        </div>
+                        <img src="img/sami.jpg" alt="Abdullah Sami - Aircraft Engineer" class="profile-image">
+                    </div>
                 </div>
             </div>
             
-            <div class="image-container">
-                <div class="profile-image">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face" alt="Tomasz Gajda">
+            <div class="scroll-indicator">
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
                 </div>
+                <span class="scroll-text">Scroll Down</span>
             </div>
         </div>
     </section>
 
+                
+
     <!-- About Section -->
-    <section class="about-section" id="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
+
+
+    <section id="about" class="about-section">
+        <div class="container-about">
+            <h2 class="section-title-about">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm a passionate Frontend Developer and UI Designer with over 3 years of experience creating beautiful, functional, and user-friendly web experiences. I combine technical expertise with creative design to build modern websites and applications that make a real impact.</p>
-                    
-                    <p>My journey in web development started with a curiosity about how websites work, and it has evolved into a deep passion for creating digital experiences that not only look great but also provide exceptional user experiences. I specialize in modern JavaScript frameworks, responsive design, and user interface optimization.</p>
-                    
-                    <p>When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, or sharing knowledge with the developer community through workshops and seminars.</p>
-                    
-                    <div class="stats">
-                        <div class="stat-item">
-                            <h3>50+</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>25+</h3>
-                            <p>Happy Clients</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>3+</h3>
-                            <p>Years Experience</p>
-                        </div>
-                    </div>
+                    <h3>Born to Fly!</h3>
+                    <p>Recent Aircraft Engineering graduate with hands-on experience in maintenance, systems analysis, and aviation safety. Committed to ensuring operational reliability, safety and regulatory compliance through meticulous attention to detail and strong technical acumen. A quick learner with a proactive mindset, eager to contribute to high-performance teams in dynamic aviation environments. Strong ability to work in fast-paced environments, collaborate with maintenance teams, and adhere to strict deadlines.</p>
                 </div>
-                
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <i class="fab fa-html5"></i>
-                        <span>HTML5</span>
-                        <div class="skill-progress">
-                            <div class="progress-bar" data-width="95%"></div>
+                <div class="skills-container">
+                    <h3 class="tech">Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-percentage="80">
+                            <i class="fas fa-file-alt"></i>
+                            <span>MS Office Suite</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                                <div class="skill-percentage">80%</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-css3-alt"></i>
-                        <span>CSS3</span>
-                        <div class="skill-progress">
-                            <div class="progress-bar" data-width="90%"></div>
+                        <div class="skill-item" data-percentage="88">
+                            <i class="fas fa-cube"></i>
+                            <span>SolidWorks</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                                <div class="skill-percentage">88%</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-js-square"></i>
-                        <span>JavaScript</span>
-                        <div class="skill-progress">
-                            <div class="progress-bar" data-width="85%"></div>
+                        <div class="skill-item" data-percentage="60">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>Adobe Photoshop</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="60"></div>
+                                <div class="skill-percentage">60%</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-react"></i>
-                        <span>React</span>
-                        <div class="skill-progress">
-                            <div class="progress-bar" data-width="80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-node-js"></i>
-                        <span>Node.js</span>
-                        <div class="skill-progress">
-                            <div class="progress-bar" data-width="75%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-figma"></i>
-                        <span>UI/UX Design</span>
-                        <div class="skill-progress">
-                            <div class="progress-bar" data-width="88%"></div>
+                        <div class="skill-item" data-percentage="75">
+                            <i class="fas fa-video"></i>
+                            <span>Video Editing</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                                <div class="skill-percentage">75%</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -161,6 +161,7 @@
     </section>
 
     <!-- Education Section -->
+
     <section class="education-section" id="education">
         <div class="container">
             <h2 class="section-title">Education</h2>
@@ -170,14 +171,14 @@
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <div class="education-info">
-                        <h3>Bachelor of Computer Science</h3>
-                        <div class="institution">University of Technology Warsaw</div>
-                        <div class="year">2019 - 2023</div>
-                        <p>Specialized in Software Engineering with focus on web technologies and user interface design. Graduated with honors and received recognition for outstanding academic performance.</p>
+                        <h3>Bachelor of Aircraft Engineering & Maintenance Systems</h3>
+                        <div class="institution">University of South Wales, UK</div>
+                        <div class="year">2024 - 2025</div>
+                        <!--<p>Foundation in aerodynamics, propulsion, and aviation systems. Proficient in aircraft design, maintenance, and flight mechanics. Active in aerospace projects and aviation competitions.</p>-->
                         <div class="education-highlights">
-                            <span class="highlight">Summa Cum Laude</span>
-                            <span class="highlight">Dean's List</span>
-                            <span class="highlight">Web Development Focus</span>
+                            
+                            <!--<span class="highlight">Dean's List</span>
+                            <span class="highlight">Web Development Focus</span>-->
                         </div>
                     </div>
                 </div>
@@ -187,14 +188,13 @@
                         <i class="fas fa-certificate"></i>
                     </div>
                     <div class="education-info">
-                        <h3>Full Stack Web Development Certificate</h3>
-                        <div class="institution">Codecademy Pro</div>
-                        <div class="year">2022</div>
-                        <p>Comprehensive program covering modern web development technologies including React, Node.js, Express, and database management.</p>
+                        <h3>Higher National Diploma <span>(Level 4 & 5), Aeronautical engineering</span></h3>
+                        <div class="institution">United College of aviation science & management</div>
+                        <div class="year">2022 - 2024</div>
+                        <p>Specialized in Software Engineering and Human-Computer Interaction. Graduated with honors and maintained a 3.9 GPA.</p>
                         <div class="education-highlights">
-                            <span class="highlight">40+ Projects</span>
-                            <span class="highlight">Industry Mentorship</span>
-                            <span class="highlight">Career Services</span>
+                           <span class="highlight">Higher Grade Distinction</span>
+                            
                         </div>
                     </div>
                 </div>
@@ -204,14 +204,14 @@
                         <i class="fas fa-award"></i>
                     </div>
                     <div class="education-info">
-                        <h3>Google UX Design Professional Certificate</h3>
-                        <div class="institution">Google via Coursera</div>
-                        <div class="year">2023</div>
-                        <p>Comprehensive UX design program covering user research, wireframing, prototyping, and user testing methodologies.</p>
+                        <h3>Higher Secondary College, Science</h3>
+                        <div class="institution">Birshreshtha Noor Mohammad Public College, BNMPC</div>
+                        <div class="year">2019 - 2021</div>
+                        <!--<p>Foundation in aerodynamics, propulsion, and aviation systems. Proficient in aircraft design, maintenance, and flight mechanics. Active in aerospace projects and aviation competitions.</p>-->
                         <div class="education-highlights">
-                            <span class="highlight">UX Research</span>
-                            <span class="highlight">Prototyping</span>
-                            <span class="highlight">User Testing</span>
+                           <span class="highlight">Golden A+</span>
+                            
+                            
                         </div>
                     </div>
                 </div>
@@ -222,7 +222,7 @@
     <!-- Training Section -->
     <section class="training-section" id="training">
         <div class="container">
-            <h2 class="section-title">Training & Workshops</h2>
+            <h2 class="section-title">Training & Certifications</h2>
             <div class="training-grid">
                 <div class="training-card">
                     <i class="fab fa-react"></i>
@@ -287,132 +287,8 @@
         </div>
     </section>
 
-    <!-- Achievements Section -->
-    <section class="achievements-section" id="achievements">
-        <div class="container">
-            <h2 class="section-title">Achievements & Recognition</h2>
-            <div class="achievements-grid">
-                <div class="achievement-item">
-                    <div class="achievement-year">2024</div>
-                    <div class="achievement-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <h3>Best UI Design Award</h3>
-                    <p>Received recognition for outstanding user interface design at the Warsaw Tech Conference for innovative e-commerce platform design.</p>
-                </div>
-                
-                <div class="achievement-item">
-                    <div class="achievement-year">2023</div>
-                    <div class="achievement-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>Top Performer Recognition</h3>
-                    <p>Acknowledged as top performer at TechCorp for delivering high-quality projects ahead of schedule and mentoring junior developers.</p>
-                </div>
-                
-                <div class="achievement-item">
-                    <div class="achievement-year">2023</div>
-                    <div class="achievement-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Open Source Contributor</h3>
-                    <p>Active contributor to several popular open-source projects with over 100+ merged pull requests and 500+ GitHub stars earned.</p>
-                </div>
-                
-                <div class="achievement-item">
-                    <div class="achievement-year">2022</div>
-                    <div class="achievement-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Community Leadership</h3>
-                    <p>Founded and led local frontend developer meetup group, organizing monthly events with 200+ active members.</p>
-                </div>
-                
-                <div class="achievement-item">
-                    <div class="achievement-year">2022</div>
-                    <div class="achievement-icon">
-                        <i class="fas fa-medal"></i>
-                    </div>
-                    <h3>Hackathon Winner</h3>
-                    <p>First place winner at the 48-hour Warsaw Innovation Hackathon for developing an accessible web application for visually impaired users.</p>
-                </div>
-                
-                <div class="achievement-item">
-                    <div class="achievement-year">2021</div>
-                    <div class="achievement-icon">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                    <h3>Innovation Award</h3>
-                    <p>Received company innovation award for developing an automated testing framework that reduced bug reports by 40%.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="experiences-section" id="experiences">
-        <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="experience-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Senior Frontend Developer</h3>
-                        <div class="company">TechCorp Solutions</div>
-                        <div class="period">January 2023 - Present</div>
-                        <p>Leading frontend development initiatives for enterprise-level applications, mentoring junior developers, and implementing modern development practices.</p>
-                        <ul class="responsibilities">
-                            <li>Led development of responsive web applications using React and TypeScript</li>
-                            <li>Improved application performance by 35% through code optimization</li>
-                            <li>Mentored 3 junior developers and conducted code reviews</li>
-                            <li>Collaborated with UX team to implement pixel-perfect designs</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Frontend Developer</h3>
-                        <div class="company">WebStudio Pro</div>
-                        <div class="period">June 2021 - December 2022</div>
-                        <p>Developed and maintained multiple client websites and web applications with focus on user experience and performance optimization.</p>
-                        <ul class="responsibilities">
-                            <li>Built 15+ responsive websites using modern HTML, CSS, and JavaScript</li>
-                            <li>Integrated third-party APIs and payment gateways</li>
-                            <li>Optimized websites for SEO and accessibility standards</li>
-                            <li>Collaborated with design team to ensure brand consistency</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Junior Web Developer</h3>
-                        <div class="company">StartUp Incubator</div>
-                        <div class="period">September 2020 - May 2021</div>
-                        <p>Entry-level position focused on learning modern web development technologies and contributing to various startup projects.</p>
-                        <ul class="responsibilities">
-                            <li>Assisted in development of MVP applications for startup clients</li>
-                            <li>Fixed bugs and implemented small features under senior guidance</li>
-                            <li>Participated in agile development process and daily standups</li>
-                            <li>Gained experience with version control and deployment processes</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Workshop Section -->
-    <section class="workshop-section" id="workshop">
+    <section class="workshop-section" id="workshops">
         <div class="container">
             <h2 class="section-title">Workshops Conducted</h2>
             <div class="workshop-grid">
@@ -479,8 +355,72 @@
         </div>
     </section>
 
+
+    <!-- Achievements Section -->
+    <section class="achievements-section" id="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements & Recognition</h2>
+            <div class="achievements-grid">
+                <div class="achievement-item">
+                    <div class="achievement-year">2024</div>
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Best UI Design Award</h3>
+                    <p>Received recognition for outstanding user interface design at the Warsaw Tech Conference for innovative e-commerce platform design.</p>
+                </div>
+                
+                <div class="achievement-item">
+                    <div class="achievement-year">2023</div>
+                    <div class="achievement-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Top Performer Recognition</h3>
+                    <p>Acknowledged as top performer at TechCorp for delivering high-quality projects ahead of schedule and mentoring junior developers.</p>
+                </div>
+                
+                <div class="achievement-item">
+                    <div class="achievement-year">2023</div>
+                    <div class="achievement-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Open Source Contributor</h3>
+                    <p>Active contributor to several popular open-source projects with over 100+ merged pull requests and 500+ GitHub stars earned.</p>
+                </div>
+                
+                <div class="achievement-item">
+                    <div class="achievement-year">2022</div>
+                    <div class="achievement-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community Leadership</h3>
+                    <p>Founded and led local frontend developer meetup group, organizing monthly events with 200+ active members.</p>
+                </div>
+                
+                <div class="achievement-item">
+                    <div class="achievement-year">2022</div>
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Hackathon Winner</h3>
+                    <p>First place winner at the 48-hour Warsaw Innovation Hackathon for developing an accessible web application for visually impaired users.</p>
+                </div>
+                
+                <div class="achievement-item">
+                    <div class="achievement-year">2021</div>
+                    <div class="achievement-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation Award</h3>
+                    <p>Received company innovation award for developing an automated testing framework that reduced bug reports by 40%.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Seminar Section -->
-    <section class="seminar-section" id="seminar">
+    <section class="seminar-section" id="seminars">
         <div class="container">
             <h2 class="section-title">Seminars & Speaking Engagements</h2>
             <div class="seminar-timeline">
@@ -572,122 +512,520 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    
+    <!--core modules-->
+
+<section class="core-modules-section" id="core">
+    <h2 class="section-headings">Core Modules</h2>
+<div class="ag-format-container">
+  <div class="ag-courses_box">
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          Advances in Aerospace Propulsion
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          <!--Start:-->
+          <span class="ag-courses-item_date">
+           NG3S427
+          </span>
+        </div>
+      </a>
+    </div>
+
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+        Aircraft Aerodynamics
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          <!--Start:-->
+          <span class="ag-courses-item_date">
+            T/615/1527
+          </span>
+        </div>
+      </a>
+    </div>
+
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          Aircraft Electrical Power and Distribution System
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          <!--Start:-->
+          <span class="ag-courses-item_date">
+            A/615/1528
+          </span>
+        </div>
+      </a>
+    </div>
+
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+        Aircraft Flight Control Systems
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          <!--Start:-->
+          <span class="ag-courses-item_date">
+            F/615/1532
+          </span>
+        </div>
+      </a>
+    </div>
+
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          Aircraft Propulsion Principle & Technology
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          <!--Start:-->
+          <span class="ag-courses-item_date">
+            J/615/1533
+          </span>
+        </div>
+      </a>
+    </div>
+
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          Aircraft Structural Integrity
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          <!--Start:-->
+          <span class="ag-courses-item_date">
+           L/615/1534
+          </span>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          Airframe Mechanical Systems
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          <!--Start:-->
+          <span class="ag-courses-item_date">
+            F/615/1529
+          </span>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          Aviation Maintenance Resource and Planning Management
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          <!--Start:-->
+          <span class="ag-courses-item_date">
+            NG3S424
+          </span>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          Avionic Systems
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          <!--Start:-->
+          <span class="ag-courses-item_date">
+            R/615/1535
+          </span>
+        </div>
+      </a>
+    </div>
+
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          Composite Materials for Aerospace Applications
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          <!--Start:-->
+          <span class="ag-courses-item_date">
+            T/615/1530
+          </span>
+        </div>
+      </a>
+    </div>
+
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          Emerging Aerospace Technologies
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          <!--Start:-->
+          <span class="ag-courses-item_date">
+            NG3S423
+          </span>
+        </div>
+      </a>
+    </div>
+
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          Engineering Design
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          <!--Start:-->
+          <span class="ag-courses-item_date">
+           K/615/1475
+          </span>
+        </div>
+      </a>
+    </div>
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          Engineering Math
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          <!--Start:-->
+          <span class="ag-courses-item_date">
+            M/615/1476
+          </span>
+        </div>
+      </a>
+    </div>
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          Engineering Project Management
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          <!--Start:-->
+          <span class="ag-courses-item_date">
+            NG3S422
+          </span>
+        </div>
+      </a>
+    </div>
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+         Engineering Science
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          <!--Start:-->
+          <span class="ag-courses-item_date">
+            T/615/1477
+          </span>
+        </div>
+      </a>
+    </div>
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+         Further Mathematics
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          <!--Start:-->
+          <span class="ag-courses-item_date">
+            H/615/1507
+          </span>
+        </div>
+      </a>
+    </div>
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          Professional Engineering Management
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          <!--Start:-->
+          <span class="ag-courses-item_date">
+            L/615/1503
+          </span>
+        </div>
+      </a>
+    </div>
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          Aviation Maintenance Resource and Planning Management
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          <!--Start:-->
+          <span class="ag-courses-item_date">
+            NG3S424
+          </span>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!--projects-->
+
+<section class="project-section" id="projects">
+     <h1 class="section-title">Projects</h1>
+     <p class="section-subtitle1">Discover my latest work and creative endeavors</p>
+    <div class="container">
+            
+     
+        <div class="projects-grid1">
+            <article class="project-card1" data-category="Web Development">
+                <div class="card-background1" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="floating-elements1">
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                    </div>
+                </div>
+                <div class="card-content1">
+                    <div class="card-category1">Web Development</div>
+                    <h2 class="card-title1">E-Commerce Platform</h2>
+                    <p class="card-description1">A modern, scalable e-commerce solution built with cutting-edge technologies and optimized for performance.</p>
+                    <a href="#" class="card-button">View Project</a>
+                </div>
+            </article>
+
+            <article class="project-card1" data-category="Mobile App">
+                <div class="card-background1" style="background-image: url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="floating-elements1">
+                    <div class="tech-stack">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Firebase</span>
+                    </div>
+                </div>
+                <div class="card-content1">
+                    <div class="card-category1">Mobile App</div>
+                    <h2 class="card-title1">Fitness Tracker</h2>
+                    <p class="card-description1">An intuitive mobile app that helps users track their fitness goals with real-time analytics and social features.</p>
+                    <a href="#" class="card-button">View Project</a>
+                </div>
+            </article>
+
+            <article class="project-card1" data-category="AI/ML">
+                <div class="card-background1" style="background-image: url('https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="floating-elements1">
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                    </div>
+                </div>
+                <div class="card-content1">
+                    <div class="card-category1">AI/ML</div>
+                    <h2 class="card-title1">AI Chatbot</h2>
+                    <p class="card-description1">An AI-powered chatbot developed using machine learning algorithms to handle customer queries efficiently in real-time.</p>
+                    <a href="#" class="card-button">View Project</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Experience Section -->
+    <section class="experiences-section" id="experiences">
         <div class="container">
-            <h2 class="section-title" style="color: white;">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Work Together</h3>
-                    <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hello, feel free to reach out!</p>
-                    
-                    <div class="contact-methods">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <strong>Email</strong>
-                                <a href="mailto:john.doe@example.com">sami927003@gmail.com</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div>
-                                <strong>Phone</strong>
-                                <a href="tel:+15551234567">+44 7984 699306</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <strong>Location</strong>
-                                <span>City Road, Cardiff, CF24 3JF </span>
-                            </div>
-                        </div>
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Senior Frontend Developer</h3>
+                        <div class="company">TechCorp Solutions</div>
+                        <div class="period">January 2023 - Present</div>
+                        <p>Leading frontend development initiatives for enterprise-level applications, mentoring junior developers, and implementing modern development practices.</p>
+                        <ul class="responsibilities">
+                            <li>Led development of responsive web applications using React and TypeScript</li>
+                            <li>Improved application performance by 35% through code optimization</li>
+                            <li>Mentored 3 junior developers and conducted code reviews</li>
+                            <li>Collaborated with UX team to implement pixel-perfect designs</li>
+                        </ul>
                     </div>
                 </div>
                 
-                <form class="contact-form" id="contact-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Name *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-code"></i>
                     </div>
-                    
-                    <div class="form-group">
-                        <label for="subject">Subject *</label>
-                        <input type="text" id="subject" name="subject" required>
+                    <div class="timeline-content">
+                        <h3>Frontend Developer</h3>
+                        <div class="company">WebStudio Pro</div>
+                        <div class="period">June 2021 - December 2022</div>
+                        <p>Developed and maintained multiple client websites and web applications with focus on user experience and performance optimization.</p>
+                        <ul class="responsibilities">
+                            <li>Built 15+ responsive websites using modern HTML, CSS, and JavaScript</li>
+                            <li>Integrated third-party APIs and payment gateways</li>
+                            <li>Optimized websites for SEO and accessibility standards</li>
+                            <li>Collaborated with design team to ensure brand consistency</li>
+                        </ul>
                     </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Message *</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
-                    
-                    <button type="submit" class="submit-btn">
-                        <span class="btn-text">Send Message</span>
-                        <span class="btn-loading" style="display: none;">
-                            <i class="fas fa-spinner fa-spin"></i>
-                        </span>
-                    </button>
-                </form>
+                    <div class="timeline-content">
+                        <h3>Junior Web Developer</h3>
+                        <div class="company">StartUp Incubator</div>
+                        <div class="period">September 2020 - May 2021</div>
+                        <p>Entry-level position focused on learning modern web development technologies and contributing to various startup projects.</p>
+                        <ul class="responsibilities">
+                            <li>Assisted in development of MVP applications for startup clients</li>
+                            <li>Fixed bugs and implemented small features under senior guidance</li>
+                            <li>Participated in agile development process and daily standups</li>
+                            <li>Gained experience with version control and deployment processes</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <h3>Abdullah <span> Sami</span></h3>
-                    <p>Aircraft Engineer</p>
-                    <p>"Design is the art of turning constraints into opportunities" - Aza Raskin </p>
+
+    <!-- Contact Section -->
+  
+<section class="contact_us" id="contact">
+        <div class="container-contact">
+            <div class="contact_inner">
+                <div class="contact_form_section">
+                    <div class="contact_field">
+                        <h3>Contact Us</h3>
+                        <p>Feel free to contact us any time. We will get back to you as soon as we can!</p>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" class="form-control" placeholder="Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" class="form-control" placeholder="Message" required></textarea>
+                            </div>
+                            <button type="submit" class="contact_form_submit">Send</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#education">Education</a></li>
-                            <li><a href="#experiences">Experience</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
+                
+                <div class="contact_info_container">
+                    <div class="background_rectangles">
+                        <div class="rectangle_1"></div>
+                        <div class="rectangle_2"></div>
                     </div>
                     
-                </div>
-                <div class="footer-social">
-                    <h4>Follow Me</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="GitHub"><i class="fab fa-facebook"></i></a>
+                    <div class="contact_info_sec">
+                        <h4>Contact Info</h4>
+                        <div class="info_single">
+                            <i class="fas fa-headset"></i>
+                            <span>+44 7984 699306</span>
+                        </div>
+                        <div class="info_single">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <span>sami927003@gmail.com</span>
+                        </div>
+                        <div class="info_single">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <span>City Road, Cardiff, CF24 3JF</span>
+                        </div>
+                    </div>
+                    
+                    <div class="social_icons-con">
+                        <a href="https://www.linkedin.com/in/sami-sami-00b10a319/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:sami927003@gmail.com" aria-label="Gmail"><i class="fa fa-envelope"></i></a>
                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <div class="footer-divider"></div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+    <div class="footer-content">
+        <div class="footer-text">
+            <p>"Design is the art of turning constraints into opportunities" <br>- Aza Raskin</br></p>
+        </div>
+
+    </div> 
+
+    <div class="footer-bottom">
                 <div class="footer-copyright">
                     <p>&copy; 2024 Abdullah Sami. All rights reserved.</p>
                     
                 </div>
-            </div>
-        </div>
-    </footer>
+    </div>
+</footer>
+
 
     <!-- Back to Top Button -->
     <button id="back-to-top" class="back-to-top" aria-label="Back to top">
