@@ -27,7 +27,7 @@
                     <li class="dropdown">
                         <a href="#education">Education <i class="fas fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#training"><i class="fas fa-certificate"></i>Training</a></li>
+                            <li><a href="#training"><i class="fas fa-certificate"></i>Licenses</a></li>
                             <li><a href="#core"><i class="fa-solid fa-book-open"></i>Core Modules</a></li>
                             <li><a href="#projects"><i class="fa-solid fa-diagram-project"></i>Projects</a></li>
                             
@@ -36,7 +36,7 @@
                     <li class="dropdown">
                         <a href="#experiences">Experiences <i class="fas fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
-                           <!-- <li><a href="#workshops"><i class="fas fa-chalkboard-teacher"></i>Workshops</a></li>-->
+                            <li><a href="#workshops"><i class="fas fa-chalkboard-teacher"></i>Training</a></li>
                             <li><a href="#achievements"><i class="fas fa-trophy"></i>Achievements</a></li>
                             <li><a href="#seminars"><i class="fas fa-users"></i>Seminars</a></li>
                         </ul>
@@ -57,8 +57,8 @@
             <div class="hero-content">
                 <div class="text-container">
                    <!-- <h2 class="greeting">Hi, I am</h2>-->
-                    <h1 class="name">Abdullah Sami</h1>
-                    <p class="title">Aircraft Engineer & Aviation Specialist</p>
+                    <h1 class="name"> Sami</h1>
+                    <p class="title">Aircraft Engineer</p>
                     <p class="description">Enthusiastic aircraft engineering graduate with a strong foundation in aerodynamics, propulsion, and aircraft systems. 
                     Passionate about aviation technology and eager to contribute to innovative aerospace projects.</p>
                     
@@ -68,7 +68,7 @@
                     </div>
                     
                     <div class="social-icons">
-                        <a href="mailto:sami927003@gmail.com" class="social-icon email" aria-label="Email">
+                        <a href="mailto:sami972003@gmail.com" class="social-icon email" aria-label="Email">
                             <i class="fas fa-envelope"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/sami-sami-00b10a319/" class="social-icon linkedin" target="_blank" aria-label="LinkedIn">
@@ -246,7 +246,7 @@
                         <h3>Bachelor of Aircraft Engineering & Maintenance Systems</h3>
                         <div class="institution">University of South Wales, UK</div>
                         <div class="year">2024 - 2025</div>
-                        <p>Foundation in aerodynamics, propulsion, and aviation systems. Proficient in aircraft design, maintenance, and flight mechanics. Active in aerospace projects and aviation competitions.</p>
+                        <!--<p>Foundation in aerodynamics, propulsion, and aviation systems. Proficient in aircraft design, maintenance, and flight mechanics. Active in aerospace projects and aviation competitions.</p>-->
                         <div class="education-highlights">
                             
                             <!--<span class="highlight">Dean's List</span>
@@ -263,7 +263,7 @@
                         <h3>Higher National Diploma <span>(Level 4 & 5), Aeronautical engineering</span></h3>
                         <div class="institution">United College of aviation science & management</div>
                         <div class="year">2022 - 2024</div>
-                        <p>Specialized in Software Engineering and Human-Computer Interaction. Graduated with honors and maintained a 3.9 GPA.</p>
+                        <!--<p>Specialized in Software Engineering and Human-Computer Interaction. Graduated with honors and maintained a 3.9 GPA.</p>-->
                         <div class="education-highlights">
                            <span class="highlight">Higher Grade Distinction</span>
                             
@@ -279,9 +279,26 @@
                         <h3>Higher Secondary College, Science</h3>
                         <div class="institution">Birshreshtha Noor Mohammad Public College, BNMPC</div>
                         <div class="year">2019 - 2021</div>
-                        <p>Foundation in aerodynamics, propulsion, and aviation systems. Proficient in aircraft design, maintenance, and flight mechanics. Active in aerospace projects and aviation competitions.</p>
+                        <!--<p>Foundation in aerodynamics, propulsion, and aviation systems. Proficient in aircraft design, maintenance, and flight mechanics. Active in aerospace projects and aviation competitions.</p>-->
                         <div class="education-highlights">
                            <span class="highlight">Golden A+</span>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+
+  <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3>High School , Science</h3>
+                        <div class="institution">Birshreshtha Munshi Abdur Rouf Public College, BMRPC</div>
+                        <div class="year"> 2014 - 2019</div>
+                       <!-- <p>Foundation in aerodynamics, propulsion, and aviation systems. Proficient in aircraft design, maintenance, and flight mechanics. Active in aerospace projects and aviation competitions.</p>-->
+                        <div class="education-highlights">
+                           <span class="highlight"> JSC- Golden A+ & Genaral Scholarship & SSC- Golden A+</span>
                             
                             
                         </div>
@@ -296,7 +313,7 @@
 
     <section id="training" class="training-section">
         <div class="container">
-            <h2 class="section-title">Training & Certifications</h2>
+            <h2 class="section-title">Licenses & Certifications</h2>
             <div class="training-grid">
                 <div class="training-card">
                     <div class="certification-badge">Certified</div>
@@ -463,74 +480,103 @@
         </div>
     </section>
 
-    <!-- Workshop Section 
-    <section class="workshop-section" id="workshops">
+    <!-- Workshop Section -->
+
+ <section class="workshop-section" id="workshops">
         <div class="container">
-            <h2 class="section-title">Workshops Conducted</h2>
-            <div class="workshop-grid">
-                <div class="workshop-card">
-                    <i class="fab fa-react"></i>
-                    <h3>Introduction to React</h3>
-                    <p>Comprehensive workshop covering React fundamentals, component lifecycle, state management, and hooks for beginner developers.</p>
+            <h2 class="section-title">Training Workshops</h2>
+            
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Loading workshops...</p>
+            </div>
+            
+            <div class="workshop-grid" id="workshopGrid">
+                <div class="workshop-card" data-workshop="us-bangla" tabindex="0">
+                    <i class="fas fa-plane"></i>
+                    <h3>US-Bangla Airlines</h3>
+                    <h4>145 Maintenance Hub, (HSIA)</h4>
+                    <p>Comprehensive aircraft maintenance training program focusing on ATR 72-600 systems, safety protocols, and advanced troubleshooting techniques.</p>
                     <div class="workshop-details">
-                        <span class="attendees">45 Attendees</span>
-                        <span class="rating">4.8/5 Rating</span>
+                        <span class="duration">Duration : One day, 20 Jun 2022</span>
+                        <span class="certification">Aircraft Type : ATR 72-600</span>
                     </div>
                 </div>
                 
-                <div class="workshop-card">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Responsive Design Masterclass</h3>
-                    <p>Hands-on workshop teaching modern CSS techniques, Grid, Flexbox, and media queries for creating mobile-first responsive websites.</p>
+                <div class="workshop-card" data-workshop="united-airways" tabindex="0">
+                    <i class="fas fa-tools"></i>
+                    <h3>United Airways</h3>
+                    <p>Advanced maintenance workshop covering modern diagnostic tools, predictive maintenance, and regulatory compliance for commercial aircraft operations.</p>
                     <div class="workshop-details">
-                        <span class="attendees">38 Attendees</span>
-                        <span class="rating">4.9/5 Rating</span>
+                        <span class="duration">Duration : Two days, 26 & 27 July 2022</span>
+                        <span class="certification">Aircraft Type : ATR 72-600</span>
                     </div>
                 </div>
-                
-                <div class="workshop-card">
-                    <i class="fas fa-rocket"></i>
-                    <h3>Web Performance Optimization</h3>
-                    <p>Technical workshop focusing on Core Web Vitals, image optimization, code splitting, and caching strategies for faster websites.</p>
+
+                <div class="workshop-card" data-workshop="biman" tabindex="0">
+                    <i class="fas fa-tools"></i>
+                    <h3>BIMAN BANGLADESH AIRLINES</h3>
+                    <h4>145 Maintenance Hub, (HSIA)</h4>
+                    <p>Comprehensive multi-aircraft maintenance training covering Bombardier Dash-8, Boeing 737, 777, and 787 series. Focus on advanced systems integration, hydraulics, avionics, and compliance with international aviation standards.</p>
                     <div class="workshop-details">
-                        <span class="attendees">32 Attendees</span>
-                        <span class="rating">4.7/5 Rating</span>
+                        <span class="duration">Duration : One day, 19 July & 21 December 2022</span>
+                        <span class="certification">Aircraft Type : Bombardier Dash-8-Q400, Boeing 737-800, Boeing 777-300, Boeing 787-800 & 900</span>
                     </div>
                 </div>
-                
-                <div class="workshop-card">
-                    <i class="fab fa-js-square"></i>
-                    <h3>Modern JavaScript ES6+</h3>
-                    <p>Deep dive into modern JavaScript features including arrow functions, destructuring, modules, promises, and async/await patterns.</p>
+
+                <div class="workshop-card" data-workshop="south-asian" tabindex="0">
+                    <i class="fas fa-helicopter"></i>
+                    <h3>SOUTH ASIAN AIRLINES</h3>
+                    <p>Specialized helicopter maintenance workshop focusing on Robinson R66 turbine helicopter systems, rotor dynamics, engine maintenance, and safety procedures for rotorcraft operations.</p>
                     <div class="workshop-details">
-                        <span class="attendees">52 Attendees</span>
-                        <span class="rating">4.8/5 Rating</span>
+                        <span class="duration">Duration : 24 October 2022</span>
+                        <span class="certification">Aircraft Type : Robinson R66</span>
                     </div>
                 </div>
-                
-                <div class="workshop-card">
-                    <i class="fas fa-paint-brush"></i>
-                    <h3>UI/UX for Developers</h3>
-                    <p>Design-focused workshop helping developers understand user experience principles, design systems, and creating intuitive interfaces.</p>
+
+                <div class="workshop-card" data-workshop="united-airways-2" tabindex="0">
+                    <i class="fas fa-tools"></i>
+                    <h3>United Airways</h3>
+                    <p>Advanced ATR 72-600 maintenance workshop covering turboprop engine systems, electrical components, flight control systems, and preventive maintenance protocols for optimal aircraft performance.</p>
                     <div class="workshop-details">
-                        <span class="attendees">28 Attendees</span>
-                        <span class="rating">4.6/5 Rating</span>
+                        <span class="duration">Duration : Two days, 26 & 27 July 2022</span>
+                        <span class="certification">Aircraft Type : ATR 72-600</span>
                     </div>
                 </div>
-                
-                <div class="workshop-card">
-                    <i class="fab fa-git-alt"></i>
-                    <h3>Git & GitHub Workflow</h3>
-                    <p>Practical workshop covering version control best practices, branching strategies, pull requests, and collaborative development workflows.</p>
+
+                <div class="workshop-card" data-workshop="bashundhara" tabindex="0">
+                    <i class="fas fa-helicopter"></i>
+                    <h3>BASHUNDHARA AIRWAY</h3>
+                    <p>Robinson R66 helicopter maintenance training focusing on turbine engine operations, transmission systems, electrical troubleshooting, and regulatory compliance for commercial helicopter operations.</p>
                     <div class="workshop-details">
-                        <span class="attendees">41 Attendees</span>
-                        <span class="rating">4.9/5 Rating</span>
+                        <span class="duration">Duration : 22 November 2022</span>
+                        <span class="certification">Aircraft Type : Robinson R66</span>
+                    </div>
+                </div>
+
+                <div class="workshop-card" data-workshop="impress" tabindex="0">
+                    <i class="fas fa-helicopter"></i>
+                    <h3>IMPRESS AVIATION LIMITED</h3>
+                    <p>Specialized Airbus EC130 helicopter maintenance program covering advanced avionics, Fenestron tail rotor systems, turbine engine diagnostics, and commercial helicopter operational requirements.</p>
+                    <div class="workshop-details">
+                        <span class="duration">Duration : 24 May 2023</span>
+                        <span class="certification">Aircraft Type : Airbus Helicopters EC130</span>
+                    </div>
+                </div>
+
+                <div class="workshop-card" data-workshop="us-bangla-2" tabindex="0">
+                    <i class="fas fa-plane"></i>
+                    <h3>US BANGLA AIRLINES</h3>
+                    <p>Boeing 737-800 maintenance workshop covering Next Generation aircraft systems, CFM56 engine maintenance, advanced flight management systems, and modern diagnostic procedures for commercial aviation operations.</p>
+                    <div class="workshop-details">
+                        <span class="duration">Duration : 11 July 2023</span>
+                        <span class="certification">Aircraft Type : Boeing 737-800</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
--->
+
 
     <!-- Achievements Section -->
     <section class="achievements-section" id="achievements">
@@ -633,83 +679,32 @@
                         <i class="fas fa-microphone"></i>
                     </div>
                     <div class="seminar-info">
-                        <h3>The Future of Frontend Development</h3>
-                        <div class="venue">Warsaw Tech Conference 2024</div>
-                        <div class="period">March 15, 2024</div>
-                        <p>Keynote presentation discussing emerging trends in frontend development, including WebAssembly, micro-frontends, and the evolution of JavaScript frameworks.</p>
+                        <h3> ROLE OF LITHIUM FOR CLEAN ENERGY TRANSITION: <br> SUPPLY, DEMAND, & PRODUCTION</h3>
+                        <div class="venue">United College of Aviation Science & Management</div>
+                        <div class="period">18 May 2022 (One Day)</div>
+                        <!--<p>Keynote presentation discussing emerging trends in frontend development, including WebAssembly, micro-frontends, and the evolution of JavaScript frameworks.</p>
                         <div class="seminar-highlights">
                             <span class="highlight">500+ Attendees</span>
                             <span class="highlight">Keynote Speaker</span>
                             <span class="highlight">Live Streamed</span>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
-                
-                <div class="seminar-item">
-                    <div class="seminar-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="seminar-info">
-                        <h3>Building Accessible Web Applications</h3>
-                        <div class="venue">Frontend Meetup Warsaw</div>
-                        <div class="period">January 20, 2024</div>
-                        <p>Technical presentation on implementing accessibility best practices, WCAG guidelines, and creating inclusive web experiences for all users.</p>
-                        <div class="seminar-highlights">
-                            <span class="highlight">80+ Attendees</span>
-                            <span class="highlight">Interactive Demo</span>
-                            <span class="highlight">Q&A Session</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="seminar-item">
-                    <div class="seminar-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="seminar-info">
-                        <h3>Performance Metrics That Matter</h3>
-                        <div class="venue">DevOps Summit Poland</div>
-                        <div class="period">November 8, 2023</div>
-                        <p>Data-driven presentation analyzing Core Web Vitals, real user monitoring, and how performance impacts business metrics and user engagement.</p>
-                        <div class="seminar-highlights">
-                            <span class="highlight">300+ Attendees</span>
-                            <span class="highlight">Case Studies</span>
-                            <span class="highlight">Performance Metrics</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="seminar-item">
-                    <div class="seminar-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <div class="seminar-info">
-                        <h3>Modern CSS: Grid, Flexbox & Beyond</h3>
-                        <div class="venue">CSS Day Warsaw</div>
-                        <div class="period">September 12, 2023</div>
-                        <p>Comprehensive presentation covering advanced CSS techniques, modern layout methods, and creative solutions for complex design challenges.</p>
-                        <div class="seminar-highlights">
-                            <span class="highlight">200+ Attendees</span>
-                            <span class="highlight">Live Coding</span>
-                            <span class="highlight">Code Examples</span>
-                        </div>
-                    </div>
-                </div>
-                
+                      
                 <div class="seminar-item">
                     <div class="seminar-icon">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
                     <div class="seminar-info">
-                        <h3>Mobile-First Design Strategies</h3>
-                        <div class="venue">UX/UI Conference Krakow</div>
-                        <div class="period">June 25, 2023</div>
-                        <p>Design-focused presentation on mobile-first approach, progressive enhancement, and creating seamless experiences across all device types.</p>
+                        <h3> INTRODUCTION OF BLACK BOX, COCKPIT VOICE & FLIGHT DATA RECORDER</h3>
+                        <div class="venue">United College of Aviation Science & Management</div>
+                        <div class="period">27 October 2022 (One Day)</div>
+                        <!--<p>Design-focused presentation on mobile-first approach, progressive enhancement, and creating seamless experiences across all device types.</p>
                         <div class="seminar-highlights">
                             <span class="highlight">150+ Attendees</span>
                             <span class="highlight">Design Workshop</span>
                             <span class="highlight">Mobile Demos</span>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
@@ -1188,7 +1183,7 @@
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <div class="timeline-content">
-                        <h3>Assistant Secretary General</h3>
+                        <h3>Assistant General Secretary</h3>
                         <div class="company">Debating Club Birshreshtha Munshi Abdur Rouf Public college- Dhaka, Bangladesh Debating Club</div>
                         <div class="period">Feb 2016 - Feb 2019</div>
                         <!--<p>Developed responsive websites and web applications for various clients. Specialized in React.js and modern CSS frameworks.</p>-->
@@ -1341,7 +1336,7 @@
                         </div>
                         <div class="info_single">
                             <i class="fas fa-envelope-open-text"></i>
-                            <span>sami927003@gmail.com</span>
+                            <span>sami972003@gmail.com</span>
                         </div>
                         <div class="info_single">
                             <i class="fas fa-map-marked-alt"></i>

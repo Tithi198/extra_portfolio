@@ -33,6 +33,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+
+
 // Back to Top Button
 const backToTopBtn = document.getElementById('back-to-top');
 
@@ -160,13 +162,13 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe all elements with scroll animations
-document.querySelectorAll('.education-item, .training-card, .timeline-item, .seminar-item, .project-card1').forEach(el => {
+document.querySelectorAll('.education-item, .training-card, .timeline-item, .seminar-item, .project-card1,.workshop-grid').forEach(el => {
     observer.observe(el);
 });
 
 // Typing animation for the about section title
 const typingTitle = document.getElementById('typing-title');
-const titles = ["Aircraft Engineer", "Aviation Specialist", "Problem Solver"];
+const titles = ["Aircraft Engineer", "Critical Thinker", "Problem Solver"];
 let currentTitleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -276,3 +278,199 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+
+
+////////////////////////////////////////////////////
+////////////////////////////////////////////////////
+
+// Workshop Section JavaScript Functionality
+        class WorkshopSection {
+            constructor() {
+                this.workshopCards = document.querySelectorAll('.workshop-card');
+                this.sectionTitle = document.querySelector('.section-title');
+                this.workshopGrid = document.getElementById('workshopGrid');
+                this.loading = document.getElementById('loading');
+                
+                this.init();
+            }
+
+            init() {
+                this.setupIntersectionObserver();
+                this.setupCardInteractions();
+                this.setupKeyboardNavigation();
+                this.simulateLoading();
+            }
+
+            // Simulate loading effect
+            simulateLoading() {
+                if (this.loading && this.workshopGrid) {
+                    this.loading.style.display = 'block';
+                    this.workshopGrid.style.opacity = '0';
+                    
+                    setTimeout(() => {
+                        this.loading.style.display = 'none';
+                        this.workshopGrid.style.opacity = '1';
+                        this.workshopGrid.style.transition = 'opacity 0.5s ease';
+                    }, 1000);
+                }
+            }
+
+            // Setup Intersection Observer for scroll animations
+            setupIntersectionObserver() {
+                const observerOptions = {
+                    threshold: 0.1,
+                    rootMargin: '0px 0px -50px 0px'
+                };
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                        }
+                    });
+                }, observerOptions);
+
+                this.workshopCards.forEach(card => {
+                    observer.observe(card);
+                });
+            }
+
+            // Setup card interactions
+            setupCardInteractions() {
+                this.workshopCards.forEach((card, index) => {
+                    // Mouse enter effect
+                    card.addEventListener('mouseenter', () => {
+                        this.highlightCard(card);
+                    });
+
+                    // Mouse leave effect
+                    card.addEventListener('mouseleave', () => {
+                        this.resetCardHighlight(card);
+                    });
+
+                    // Click effect
+                    card.addEventListener('click', (e) => {
+                        this.selectCard(card);
+                        this.createRipple(e, card);
+                    });
+                });
+            }
+
+            // Setup keyboard navigation
+            setupKeyboardNavigation() {
+                this.workshopCards.forEach((card, index) => {
+                    card.addEventListener('keydown', (e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            this.selectCard(card);
+                        }
+                        
+                        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                            e.preventDefault();
+                            this.focusNextCard(index);
+                        }
+                        
+                        if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                            e.preventDefault();
+                            this.focusPreviousCard(index);
+                        }
+                    });
+                });
+            }
+
+            // Highlight card on hover
+            highlightCard(card) {
+                card.style.transform = 'translateY(-15px) scale(1.02)';
+                card.style.zIndex = '10';
+                
+                const icon = card.querySelector('i');
+                if (icon) {
+                    icon.style.color = '#e74c3c';
+                    icon.style.transform = 'scale(1.2) rotate(10deg)';
+                }
+            }
+
+            // Reset card highlight
+            resetCardHighlight(card) {
+                card.style.transform = '';
+                card.style.zIndex = '';
+                
+                const icon = card.querySelector('i');
+                if (icon) {
+                    icon.style.color = '#3498db';
+                    icon.style.transform = '';
+                }
+            }
+
+            // Select card
+            selectCard(card) {
+                // Remove previous selections
+                this.workshopCards.forEach(c => c.classList.remove('selected'));
+                
+                // Add selection to clicked card
+                card.classList.add('selected');
+                
+                // Get workshop data
+                const workshopType = card.dataset.workshop;
+                const title = card.querySelector('h3').textContent;
+                
+                // Show workshop details
+                this.showWorkshopDetails(workshopType, title);
+                
+                // Add pulse animation
+                card.style.animation = 'pulse 0.6s ease-out';
+                setTimeout(() => {
+                    card.style.animation = '';
+                }, 600);
+            }
+
+           
+
+            // Create ripple effect
+            createRipple(event, card) {
+                const ripple = document.createElement('div');
+                const rect = card.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = event.clientX - rect.left - size / 2;
+                const y = event.clientY - rect.top - size / 2;
+
+                ripple.className = 'ripple';
+                ripple.style.left = `${x}px`;
+                ripple.style.top = `${y}px`;
+                ripple.style.width = `${size}px`;
+                ripple.style.height = `${size}px`;
+
+                card.appendChild(ripple);
+
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            }
+
+            // Focus navigation
+            focusNextCard(currentIndex) {
+                const nextIndex = (currentIndex + 1) % this.workshopCards.length;
+                this.workshopCards[nextIndex].focus();
+            }
+
+            focusPreviousCard(currentIndex) {
+                const prevIndex = currentIndex === 0 ? this.workshopCards.length - 1 : currentIndex - 1;
+                this.workshopCards[prevIndex].focus();
+            }
+        }
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('🚀 Training Workshops Section Initialized');
+            
+            // Initialize main workshop functionality
+            const workshopSection = new WorkshopSection();
+            
+            // Add error handling
+            window.addEventListener('error', (e) => {
+                console.error('Workshop Section Error:', e.error);
+            });
+        });
+
