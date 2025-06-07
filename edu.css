@@ -2297,7 +2297,7 @@ footer {
     width: 100%;
     height: auto;
     text-align: center;
-     background:  url('img/hero.png') no-repeat center center/cover;
+    background:  url('img/hero.png') no-repeat center center/cover;
 }
 
 .footer-content {
@@ -2689,9 +2689,10 @@ footer {
 /* Projects Section Fixes */
 @media (max-width: 576px) {
     .project-section .section-subtitle1 {
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding: 0 15px;
     }
+    
     
     .card-description1 {
         font-size: 0.85rem;
