@@ -1,19 +1,59 @@
-// Mobile Menu Toggle
+// Enhanced Mobile Menu Toggle with Dropdown Support
 const menuToggle = document.getElementById('menu-toggle');
 const navMenu = document.getElementById('nav-menu');
+const dropdowns = document.querySelectorAll('.dropdown > a');
 
 menuToggle.addEventListener('click', () => {
     menuToggle.classList.toggle('active');
     navMenu.classList.toggle('show');
+    document.body.classList.toggle('no-scroll');
 });
 
 // Close mobile menu when clicking on a link
 document.querySelectorAll('#nav-menu a').forEach(link => {
-    link.addEventListener('click', () => {
-        menuToggle.classList.remove('active');
-        navMenu.classList.remove('show');
+    link.addEventListener('click', (e) => {
+        // Only close if it's not a dropdown toggle
+        if (!link.parentElement.classList.contains('dropdown')) {
+            menuToggle.classList.remove('active');
+            navMenu.classList.remove('show');
+            document.body.classList.remove('no-scroll');
+        }
     });
 });
+
+// Mobile dropdown functionality
+dropdowns.forEach(dropdown => {
+    dropdown.addEventListener('click', function(e) {
+        if (window.innerWidth <= 992) { // Only for mobile
+            e.preventDefault();
+            const parent = this.parentElement;
+            parent.classList.toggle('active');
+            
+            // Close other open dropdowns
+            dropdowns.forEach(otherDropdown => {
+                if (otherDropdown !== this) {
+                    otherDropdown.parentElement.classList.remove('active');
+                }
+            });
+        }
+    });
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', function(e) {
+    if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('show');
+        document.body.classList.remove('no-scroll');
+        
+        // Close all dropdowns
+        dropdowns.forEach(dropdown => {
+            dropdown.parentElement.classList.remove('active');
+        });
+    }
+});
+
+
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
