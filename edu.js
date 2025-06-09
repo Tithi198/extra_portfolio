@@ -208,7 +208,7 @@ document.querySelectorAll('.education-item, .training-card, .timeline-item, .sem
 
 // Typing animation for the about section title
 const typingTitle = document.getElementById('typing-title');
-const titles = ["Aircraft Engineer", "Critical Thinker", "Problem Solver"];
+const titles = ["Aircraft Engineer", "Critical Thinker", "Problem Solver", "Teamleader"];
 let currentTitleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
